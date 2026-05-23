@@ -1,11 +1,10 @@
 export default function Navbar() {
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-white/60 border-b border-pink-100 shadow-sm">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-pink-100 shadow-sm">
 
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-        {/* LOGO */}
         <a
           href="/"
           className="text-2xl md:text-3xl font-bold text-pink-600"
@@ -13,49 +12,30 @@ export default function Navbar() {
           💖 BestFriend
         </a>
 
-        {/* NAV LINKS */}
-        <div className="flex flex-wrap gap-3 md:gap-6 text-sm md:text-lg">
+        <div className="flex gap-3 md:gap-6 text-sm md:text-lg flex-wrap">
 
-          <a
-            href="/"
-            className="px-4 py-2 rounded-full hover:bg-pink-100 transition"
-          >
+          <a href="/" className="hover:text-pink-500 transition">
             Home
           </a>
 
-          <a
-            href="/gallery"
-            className="px-4 py-2 rounded-full hover:bg-pink-100 transition"
-          >
-            Gallery
-          </a>
-
-          <a
-            href="/memories"
-            className="px-4 py-2 rounded-full hover:bg-pink-100 transition"
-          >
+          <a href="/memories" className="hover:text-pink-500 transition">
             Memories
           </a>
 
-          <a
-            href="/letter"
-            className="px-4 py-2 rounded-full hover:bg-pink-100 transition"
-          >
+          <a href="/gallery" className="hover:text-pink-500 transition">
+            Gallery
+          </a>
+
+          <a href="/letter" className="hover:text-pink-500 transition">
             Letter
           </a>
 
-          <a
-            href="/reasons"
-            className="px-4 py-2 rounded-full hover:bg-pink-100 transition"
-          >
-            Reasons
+          <a href="/timeline" className="hover:text-pink-500 transition">
+            Timeline
           </a>
 
-          <a
-            href="/timeline"
-            className="px-4 py-2 rounded-full hover:bg-pink-100 transition"
-          >
-            Timeline
+          <a href="/reasons" className="hover:text-pink-500 transition">
+            Reasons
           </a>
 
         </div>

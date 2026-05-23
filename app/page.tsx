@@ -1,83 +1,196 @@
 import Navbar from "./components/Navbar"
+
 export default function Home() {
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-pink-100 via-rose-50 to-purple-100 flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
+    <main className="bg-gradient-to-b from-[#fff1f5] via-[#fff7fb] to-[#f6ecff] text-gray-800 overflow-hidden">
 
-      {/* GLOW */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-pink-300 blur-3xl opacity-20 rounded-full"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-300 blur-3xl opacity-20 rounded-full"></div>
+      <Navbar />
 
-      {/* FLOATING ICONS */}
-      <div className="absolute top-20 left-20 text-6xl animate-bounce">
-        💖
-      </div>
+      {/* HERO */}
+      <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
 
-      <div className="absolute bottom-20 right-20 text-5xl animate-pulse">
-        ✨
-      </div>
+        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-pink-300 opacity-20 blur-3xl rounded-full"></div>
 
-      <div className="max-w-5xl relative z-10">
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-300 opacity-20 blur-3xl rounded-full"></div>
 
-        <p className="text-pink-500 tracking-[6px] uppercase text-lg mb-6">
-          Dedicated To My Favorite Person 🌸
-        </p>
+        <div className="relative z-10 max-w-5xl">
 
-        <h1 className="text-6xl md:text-8xl font-bold text-pink-600 leading-tight">
-          To My
-          <br />
-          Best Friend 💖
-        </h1>
+          <p className="uppercase tracking-[8px] text-pink-500 text-lg mb-8">
+            For My Favorite Person ✨
+          </p>
 
-        <p className="mt-10 text-xl md:text-2xl leading-10 text-gray-700">
-          Every memory,
-          every laugh,
-          every emotional moment,
-          and every little feeling
-          is beautifully stored here ❤️
-        </p>
+          <h1 className="text-6xl md:text-8xl font-bold text-pink-600 leading-tight">
+            A Little
+            <br />
+            Piece Of My Heart 💖
+          </h1>
 
-        {/* BUTTONS */}
-        <div className="flex flex-wrap justify-center gap-6 mt-16">
+          <p className="mt-12 text-xl md:text-2xl leading-[50px] text-gray-700">
 
-          <a
-            href="/gallery"
-            className="px-8 py-4 rounded-full bg-pink-500 text-white text-xl shadow-2xl hover:scale-110 transition duration-300"
-          >
-            Gallery 📸
-          </a>
+            This website is made from memories,
+            emotions,
+            comfort,
+            random laughs,
+            and every beautiful moment
+            that made our friendship special 🌸
 
-          <a
-            href="/letter"
-            className="px-8 py-4 rounded-full bg-purple-500 text-white text-xl shadow-2xl hover:scale-110 transition duration-300"
-          >
-            Letter 💌
-          </a>
+          </p>
 
-          <a
-            href="/memories"
-            className="px-8 py-4 rounded-full bg-rose-500 text-white text-xl shadow-2xl hover:scale-110 transition duration-300"
-          >
-            Memories 🌸
-          </a>
+          <div className="flex flex-wrap justify-center gap-6 mt-14">
 
-          <a
-            href="/reasons"
-            className="px-8 py-4 rounded-full bg-fuchsia-500 text-white text-xl shadow-2xl hover:scale-110 transition duration-300"
-          >
-            Reasons ✨
-          </a>
+            <a
+              href="/memories"
+              className="px-10 py-5 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 text-white text-xl shadow-2xl hover:scale-105 transition duration-300"
+            >
+              Open Memories 📸
+            </a>
 
-          <a
-            href="/timeline"
-            className="px-8 py-4 rounded-full bg-indigo-500 text-white text-xl shadow-2xl hover:scale-110 transition duration-300"
-          >
-            Timeline 🌙
-          </a>
+            <a
+              href="/letter"
+              className="px-10 py-5 rounded-full bg-white text-pink-600 text-xl shadow-2xl hover:scale-105 transition duration-300"
+            >
+              Read My Letter 💌
+            </a>
+
+          </div>
 
         </div>
 
-      </div>
+      </section>
+
+      {/* IMAGE + STORY */}
+      <section className="min-h-screen flex items-center px-6 md:px-20 py-24">
+
+        <div className="grid md:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+
+          <img
+            src="/bestfriend.jpg"
+            className="rounded-[40px] shadow-2xl h-[650px] w-full object-cover hover:scale-105 transition duration-700"
+          />
+
+          <div>
+
+            <h2 className="text-5xl font-bold text-purple-600 leading-tight mb-10">
+              You Became
+              <br />
+              My Safe Place 🌸
+            </h2>
+
+            <div className="space-y-8 text-xl leading-[45px] text-gray-700">
+
+              <p>
+                Some people unexpectedly enter our lives
+                and become one of the most important parts of it.
+              </p>
+
+              <p>
+                Thank you for every comfort,
+                every effort,
+                every emotional moment,
+                and every memory ❤️
+              </p>
+
+              <p>
+                Life genuinely became softer and happier because you exist in it ✨
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* SCRAPBOOK */}
+      <section className="px-6 md:px-20 py-24">
+
+        <div className="text-center mb-20">
+
+          <h2 className="text-6xl font-bold text-pink-600">
+            Our Scrapbook 📸
+          </h2>
+
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+
+          {[
+            "/memory1.jpg",
+            "/memory2.jpg",
+            "/memory3.jpg"
+          ].map((photo, index) => (
+
+            <div
+              key={index}
+              className={`bg-white p-5 rounded-[35px] shadow-2xl
+              ${index % 2 === 0 ? "rotate-[-3deg]" : "rotate-[3deg]"}
+              hover:rotate-0 hover:scale-105 transition duration-500`}
+            >
+
+              <img
+                src={photo}
+                className="rounded-[25px] h-[400px] w-full object-cover"
+              />
+
+              <p className="text-center text-gray-600 mt-6 text-lg italic">
+                A memory I’ll always treasure 💖
+              </p>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </section>
+
+      {/* FINAL */}
+      <section className="min-h-screen flex flex-col justify-center items-center text-center px-6">
+
+        <div className="max-w-5xl">
+
+          <h2 className="text-7xl font-bold text-pink-600 leading-tight">
+            Thank You
+            <br />
+            For Existing 💖
+          </h2>
+
+          <p className="mt-14 text-2xl leading-[55px] text-gray-700">
+
+            Maybe I don’t always say it enough...
+            <br /><br />
+
+            But life genuinely became warmer,
+            happier,
+            softer,
+            and more beautiful
+            after you became part of it 🌸
+
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-6 mt-16">
+
+            <a
+              href="/timeline"
+              className="px-10 py-5 rounded-full bg-white text-pink-600 text-xl shadow-2xl hover:scale-105 transition duration-300"
+            >
+              Our Journey 🌙
+            </a>
+
+            <a
+              href="/reasons"
+              className="px-10 py-5 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 text-white text-xl shadow-2xl hover:scale-105 transition duration-300"
+            >
+              Why You Matter 💌
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
 
     </main>
   )
