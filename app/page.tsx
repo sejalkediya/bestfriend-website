@@ -131,7 +131,7 @@ export default function Home() {
 
               <img
                 src={photo}
-                className="rounded-[25px] h-[400px] w-full object-cover"
+                className="rounded-[25px] w-full h-auto object-contain bg-white"
               />
 
               <p className="text-center text-gray-600 mt-6 text-lg italic">
