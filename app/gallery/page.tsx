@@ -30,12 +30,12 @@ export default function Gallery() {
 
           <div
             key={index}
-            className="overflow-hidden rounded-[35px] bg-white p-3 shadow-2xl hover:-translate-y-4 hover:rotate-1 transition duration-500 break-inside-avoid"
+            className="overflow-hidden rounded-[35px] bg-white p-3 shadow-2xl hover:-translate-y-6 hover:rotate-2 hover:shadow-[0_25px_70px_rgba(236,72,153,0.25)] transition duration-700 break-inside-avoid"
           >
 
             <img
               src={photo}
-              className="rounded-[25px] w-full object-cover hover:scale-110 transition duration-700"
+              className="rounded-[25px] w-full object-cover group-hover:scale-125 transition duration-1000"
             />
 
           </div>

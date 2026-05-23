@@ -20,7 +20,7 @@ export default function Home() {
             For My Favorite Person ✨
           </p>
 
-          <h1 className="text-6xl md:text-8xl font-bold text-pink-600 leading-tight">
+          <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-pink-500 via-rose-500 to-purple-500 bg-clip-text text-transparent leading-tight drop-shadow-lg"">
             A Little
             <br />
             Piece Of My Heart 💖
@@ -66,7 +66,7 @@ export default function Home() {
 
           <img
             src="/bestfriend.jpg"
-            className="rounded-[40px] shadow-2xl h-[650px] w-full object-cover hover:scale-105 transition duration-700"
+            className="rounded-[40px] shadow-[0_25px_80px_rgba(236,72,153,0.25)] h-[650px] w-full object-cover hover:scale-105 transition duration-700 floating""
           />
 
           <div>

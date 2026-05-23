@@ -85,3 +85,23 @@ img {
   background: #f9a8d4;
   color: white;
 }
+/* FLOAT HEARTS */
+
+@keyframes floating {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating {
+  animation: floating 5s ease-in-out infinite;
+}
