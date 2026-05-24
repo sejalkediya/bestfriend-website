@@ -22,7 +22,7 @@ export default function Home() {
 
           <h1 className="text-5xl md:text-8xl font-semibold leading-tight tracking-tight">
 
-            <span className="bg-gradient-to-r from-rose-500 via-pink-450 to-pink-500 bg-clip-text text-transparent drop-shadow-[0_6px_18px_rgba(255,182,193,0.25)]">
+            <span className="bg-gradient-to-r from-pink-500 via-rose-450 to-pink-500 bg-clip-text text-transparent drop-shadow-[0_6px_18px_rgba(255,182,193,0.25)]">
               A Little
             </span>
 
