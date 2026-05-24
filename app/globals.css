@@ -105,3 +105,19 @@ img {
 .floating {
   animation: floating 5s ease-in-out infinite;
 }
+
+/* HEADINGS */
+h1,
+h2,
+h3 {
+  font-family: var(--font-playfair), serif;
+}
+
+/* NORMAL TEXT */
+p,
+a,
+li,
+span,
+button {
+  font-family: var(--font-poppins), sans-serif;
+}

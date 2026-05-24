@@ -7,9 +7,9 @@ export default function Navbar() {
 
         <a
           href="/"
-          className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent"
+          className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent"
         >
-          💖 Our Bond
+          you feel like home 🌸
         </a>
 
         <div className="flex flex-wrap gap-3 md:gap-6">
